@@ -1,5 +1,5 @@
 <div class="parent">
-  <table border="1">
+  <!-- <table border="1">
     <tr>
       <th>ID</th>
       <th>Name</th>
@@ -9,13 +9,13 @@
       <th>Company</th>
       <th>Email</th>
       <th>Address</th>
-    </tr>
+    </tr> -->
     <!-- We must use pipe to get the data from Observable -->
     <!-- We can use async pipe to get the data from Observable -->
     <!-- We can use subscribe method to get the data from Observable -->
     <!-- <tr *ngFor="let data of userData | async"> -->
 
-    <tr *ngFor="let data of userData$ | async">
+    <!-- <tr *ngFor="let data of userData$ | async">
       <td>{{data.id}}</td>
       <td>{{data.name}}</td>
       <td>{{data.username}}</td>
@@ -25,7 +25,7 @@
       <td>{{data.email}}</td>
       <td>{{data.address.street}}, {{data.address.city}}, {{data.address.zipcode}}</td>
     </tr>
-  </table>
+  </table> -->
 
 
   <!-- {{userData}} -->
