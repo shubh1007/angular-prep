@@ -1,0 +1,9 @@
+<div class="child">
+    <h2>Child Component</h2>
+    <ul>
+        <li *ngFor=""let chat of chats>{{chat}}</li>
+    </ul>    
+    <label for="child-chat">You: </label>
+    <input type="text" id="child-chat" #childChat>
+    <button (click) = "addChildChat(childChat.value)">Send</button>
+</div> 
