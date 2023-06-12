@@ -5,12 +5,11 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class UserdataService {
-
+  API_URL: string;
   constructor(private http: HttpClient) { 
-    
+    this.API_URL = "https://jsonplaceholder.typicode.com/users";
   }
   getUserData(){
-    let API_URL = "https://jsonplaceholder.typicode.com/users";
-    return this.http.get(API_URL);
+    return this.http.get(this.API_URL);
   }
 }
